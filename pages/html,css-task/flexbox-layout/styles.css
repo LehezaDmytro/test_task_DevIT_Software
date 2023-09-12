@@ -1,0 +1,43 @@
+body {
+  box-sizing: border-box;
+  max-width: 820px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.border {
+  border: 3px black solid;
+}
+
+.content-centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.nav {
+  height: 50px;
+  margin-bottom: 20px;
+}
+.main {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.content {
+  height: 500px;
+  flex-grow: 1;
+}
+.sidebar {
+  height: 500px;
+  flex-basis: 200px;
+}
+.footer {
+  height: 100px;
+  margin-bottom: 20px;
+}

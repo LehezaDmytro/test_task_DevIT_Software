@@ -1,0 +1,43 @@
+body {
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-areas: "link link link" "header header header" "nav nav nav" "content content sidebar" "footer footer footer";
+  grid-gap: 10px 20px;
+  grid-template-columns: 1fr 1fr 200px;
+  grid-template-rows: 20px 100px 50px minmax(500px, auto) 100px;
+
+  max-width: 820px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.border {
+  border: 3px black solid;
+}
+.content-centering {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.go-back-link {
+  grid-area: link;
+}
+
+.header {
+  grid-area: header;
+}
+.nav {
+  grid-area: nav;
+}
+.content {
+  grid-area: content;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+.footer {
+  grid-area: footer;
+  margin-bottom: 20px;
+}

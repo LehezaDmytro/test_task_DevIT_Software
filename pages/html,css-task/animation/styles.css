@@ -1,0 +1,25 @@
+.square {
+  margin: 0 auto;
+  margin-top: calc(50vh - 100px);
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  animation: spinAndChangeColor 5s linear infinite;
+}
+
+@keyframes spinAndChangeColor {
+  0% {
+    transform: rotate(90deg);
+  }
+  33% {
+    transform: rotate(180deg);
+    background-color: orange;
+  }
+  66% {
+    transform: rotate(270deg);
+    background-color: green;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
